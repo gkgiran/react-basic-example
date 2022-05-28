@@ -1,18 +1,11 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
-// Obj: render students from https://hp-assessment-api.herokuapp.com/hp/characters
+
 // 1. import axios
 // 2. define some useState to keep the data that we are going to fetch
 // 3. define a useEffect to trigger this axios call
 // 4. Save data (response) to state
-// 5. render it.
-
-// - The Homepage displays a list of characters
-// - A separate component is used to display the characters
-// - Characters should be sorted alphabetically by their first name
-// - Each charcter is displayed with their name, birth, image, house (name or houseId) and "read more" button
-// - Clicking on the "Read more" button takes you to a details page
 
 const Homepage = () => {
   const [characters, setCharacters] = useState([]);
@@ -27,7 +20,7 @@ const Homepage = () => {
         setCharacters(response.data);
         // console.log("res: ",response.data);
       } catch (e) {
-        console.log(e.message);
+        // console.log(e.message);
       }
     };
     fetCharacters();
@@ -43,14 +36,14 @@ const Homepage = () => {
 
   return (
     <div>
-      <h1>Harry Potter</h1>
-      <h2>Characters</h2>
+      <h2>Codaisseuer Class |59|</h2>
+      <h1>Harry Potter |Characters|</h1>
       <input
         type="text"
         value={term}
         onChange={(e) => setTerm(e.target.value)}
       />
-      <Link to="/about">Go to about page</Link>
+      <Link to="/about">| About Page |</Link>
       <br />
       {shorterList.map((p) => (
         <div className="character">
