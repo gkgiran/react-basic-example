@@ -35,7 +35,7 @@ const Homepage = () => {
   );
 
   return (
-    <div>
+    <div className="nav_bar">
       <h2>Codaisseuer Class |59|</h2>
       <h1>Harry Potter |Characters|</h1>
       <input
@@ -53,7 +53,7 @@ const Homepage = () => {
           <p>Birth Year: {p.born}</p>
           <p>House Id: {p.houseId}</p>
           <p>House Name: {p.house.name}</p>
-          <button><Link to={`/details/${p.id}`}>Read More</Link></button>
+          <button className="read"><Link to={`/details/${p.id}`}>Read More</Link></button>
           
         </div>
       ))}

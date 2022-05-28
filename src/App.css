@@ -13,6 +13,10 @@
   }
 }
 
+.nav_bar {
+  background-color: rgb(209, 176, 68);
+  
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -39,14 +43,15 @@
 
 
 .character {
-    border: 1px solid;
+    background-color: #7da4af;
+    border: 20px solid;
     display: inline-block;
     box-sizing: border-box;
     width: 33%;
 }
 
-.App-button {
-background-color: #4CAF50;
+.read {
+background-color: rgb(235, 179, 76);
 }
 
 /* .button {
